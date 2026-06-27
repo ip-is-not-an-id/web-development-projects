@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic-style.css">
+    <link rel="stylesheet" href="form-style.css">
+    <title>Travel Now</title>
+</head>
+
+<body>
+    <header>
+        <section class="title">
+            <div class="main-logo-ctr">
+                <img src="images/travel-logo.png" alt="Logo" class="main-logo">
+            </div>
+            <div class="brand-title">
+                <h1>TravelNow</h1>
+                <p>Plan your next travel destination.</p>
+            </div>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="plans & booking.html">Plans & Booking</a></li>
+                <li><a href="contact-form.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>Contact Us via the form below</p>
+            <form action="contactform.php" method="post">
+
+                <section class="personal-info">
+                    <label for="name">Full Name <span class="required">*</span> :</label>
+                    <input type="name" name="name" id="name" required placeholder="Name"><br>
+
+                    <label for="email">Email: <span class="required">*</span></label>
+                    <input type="email" name="email" id="email" required placeholder="Email"><br>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+91 XXX-XXX-XXX"><br>
+
+                    <label for="travel-type">Travel Type: <span class="required">*</span>
+                    </label><br>
+                    <input type="radio" name="travel-type" id="domestic" required value="domestic" checked>
+                    <label for="domestic">Domestic</label>
+                    <input type="radio" name="travel-type" id="international" required value="international">
+                    <label for="international">International</label>
+                    <br>
+
+
+                    <input type="checkbox" name="travel-type" id="travel-type" checked>
+                    <label for="">Reiceve our Newsletter</label>
+
+
+                </section>
+                <section class="query-info">
+                    <h2>Query</h2>
+                    <label for="querytype">Select Query Type</label>
+                    <select name="querytype" id="querytype" required>
+                        <option value="plans">Plans</option>
+                        <option value="pricing">Pricing</option>
+                        <option value="hotels" selected>Hotel Booking</option>
+                        <option value="flights">Flight Booking</option>
+                        <option value="others">Other</option>
+                    </select> <br>
+                    <textarea name="query_description" id="queryquestion" cols="60" rows="10" required></textarea>
+                </section>
+                <input type="submit" class="btn" value="Submit">
+                <input type="reset" class="btn" value="Reset">
+            </form>
+        </section>
+        <section>
+            <h2>Feedback</h2>
+            <article>
+                <p>Your Feedback Matters To Us!! </p>
+            </article>
+            <form action="satisfaction.php" method="post">
+                <label for="sat-indicator">How satisfied are you with our plans/pricing or services overall?</label>
+                <br>
+                <select name="sat-indicator" id="sat-indicator">
+                    <option value="5">&#128525 Excellent</option>
+                    <option value="4">&#128515 Good</option>
+                    <option value="3">&#128528 Neutral</option>
+                    <option value="2">&#128542 Unsatisfied </option>
+                    <option value="1">&#128532 Dissapointed</option>
+                </select>
+            </form>
+        </section>
+    </main>
+
+    <hr class="my-hr">
+
+
+    <footer>
+        <section class="follow">
+            <strong style="width:200px;text-align: center; border:2px solid black">Follow Us </strong>
+
+            <section class="follow-links">
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="contact.html">blog</a></li>
+                <li><a href="contact.html">products</a></li>
+                <li><a href="contact.html">play store</a></li>
+            </section>
+            <section class="follow-logos">
+                <a href="about.html">
+                    <img src="https://img.icons8.com/?size=100&id=L1ws9zn2uD01&format=png&color=000000"
+                        alt="play-store logo" class="logo-social">
+                </a>
+                <a href="about.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"
+                        alt="play-store logo" class="logo-social">
+                </a>
+                <a href="about.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                        alt="play-store logo" class="logo-social">
+                </a>
+                <a href="about.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                        alt="play-store logo" class="logo-social">
+                </a>
+            </section>
+        </section>
+        </section>
+        <section class="info">
+            <section>
+                <small>TravelNow&reg. All Rights Reserved. &copy 2026</small>
+                <a href='https://pngtree.com/freepng/travel-logo-design-template-for-business-and-company-vector_9077410.html'
+                    class="attribution"><small>png image from pngtree.com/</small>
+                </a>
+            </section>
+            <mark>Author: Rony C B</mark>
+        </section>
+    </footer>
+</body>
+
+</html>
