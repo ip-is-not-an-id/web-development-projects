@@ -1,0 +1,133 @@
+/* HERO SECTION */
+
+/* use max-width for responsiveness */
+
+#hero {
+  background-image: url(https://images.unsplash.com/photo-1771694583810-db9568dc9b8d);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.43)),
+    url(https://images.unsplash.com/photo-1771694583810-db9568dc9b8d) no-repeat
+      center top/cover;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.container {
+  /* flex-basis: 85vh;
+  flex-grow: 1;
+  flex-shrink: 1.5; */
+  flex: 1 1.5 85vh;
+  display: flex;
+  flex-flow: row;
+}
+@media (max-width: 375px) {
+  .container {
+    flex-flow: column-reverse wrap;
+    align-items: center;
+  }
+  .order {
+    flex-basis: 10%;
+    max-height: 10%;
+  }
+}
+
+.animation {
+  flex-basis: 8rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+  font-size: 0.7rem;
+  /* display:flex; */
+  align-content: center;
+}
+
+.info {
+  flex-basis: 65%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* flex-shrink:1; */
+}
+
+.overlay {
+  padding: 0.8rem 2rem;
+  width: 80%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  height: auto;
+}
+
+.info h1 {
+  margin-bottom: 0.9rem;
+  color: crimson;
+  color: orange;
+}
+
+.info h2 {
+  width: 95%;
+  margin-left: auto;
+  margin-bottom: 1.2rem;
+  font-size: 90%;
+  color: lightgreen;
+  /* letter-spacing: 2px;; */
+}
+
+.info p {
+  /* width: 50rem; */
+  max-width: 85%;
+  /* KEY */
+  margin-left: auto;
+  line-height: 1.5;
+  color: rgba(237, 221, 83, 1);
+}
+
+.order {
+  flex-basis: 35%;
+  flex-shrink: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order a {
+  border: 2px solid black;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 12em;
+  color: #fff;
+  transform: translateY(10rem) translateX(-2rem);
+  padding: 0.8rem 1rem;
+  background: crimson;
+}
+@media (max-width: 375px) {
+  .order a {
+    transform: none;
+  }
+}
+
+@keyframes ride {
+  0% {
+    /* transform: translateX(100%); */
+    transform: translateX(85vw);
+  }
+  70% {
+    /* transform: translateX(0); */
+    transform: translateX(10vw);
+  }
+  100% {
+    transform: translateX(10vw);
+  }
+}
+
+.animation img {
+  transform: translateX(10vw);
+  height: 7rem;
+  animation-name: ride;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}

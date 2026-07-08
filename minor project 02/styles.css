@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media (min-width:376px) and (max-width:768px){
+  html{
+    font-size:12px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+/* HEADER AND BANNER */
+
+header {
+  text-align: center;
+  color: bisque;
+  background-image: url(https://images.unsplash.com/photo-1759568558640-3c9239a6153e);
+  background-position: center;
+}
+
+.logo {
+  width: 8em;
+  max-width: 20%;
+  aspect-ratio: 1;
+  filter: invert(20%);
+}
+
+
+
+/* NAVBAR AND HAMBURGER NAVIGATION */
+/* Hamburger Navbar for Mobile */
+
+.ham-nav ul a {
+  text-decoration: none;
+  color: black;
+  flex: 1 0 2rem;
+}
+.ham-nav ul a:active {
+  opacity: 0.3;
+  color: azure;
+}
+
+.ham-nav ul a li {
+  list-style: none;
+  background: rgba(237, 221, 83, 1);
+  background: linear-gradient(
+    355deg,
+    rgb(209, 20, 20) 0%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  width: 100vw;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* outline: rgba(245, 245, 245) 0.2rem solid; */
+  border: rgba(245, 245, 245) 0.2rem solid;
+}
+.ham-nav ul a li:not(:first-of-type){
+  border-top:none;
+}
+
+.ham-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(237, 221, 83, 1);
+  font-size: 1.5rem;
+}
+
+/* FOOTER */
+
+

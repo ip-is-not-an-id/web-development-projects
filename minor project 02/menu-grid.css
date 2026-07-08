@@ -1,0 +1,121 @@
+/* MENU CARDS STYLING */
+
+.menu {
+  max-height: 200vh;
+  text-align: center;
+  background:
+    url(https://images.unsplash.com/photo-1759568558640-3c9239a6153e) no-repeat
+      center/cover,
+    linear-gradient(355deg, rgb(209, 20, 20) 0%, rgba(237, 221, 83, 1) 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu h1 {
+  color: #fff;
+  height: 12vh;
+  /* key */
+  align-content: center;
+  flex: 0 1 15%;
+  margin-top: 3rem;
+}
+
+.card-grid {
+  flex: 1 1 85%;
+  width: 100vw;
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 4rem 2rem;
+  padding: 3rem 4rem;
+  height: 100%;
+}
+
+.card {
+  aspect-ratio: 3/4;
+  border-radius: 1rem;
+  background: lightgreen;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  box-shadow:
+    1rem 1rem 3rem,
+    1rem 1rem 2rem inset #f3f3f35e;
+  transition:
+    box-shadow 200ms ease-in,
+    transform 500ms ease-in;
+
+  /* transition: all 400ms ease-in; */
+}
+
+@media ((min-width: 375px) and (max-width: 767px)) or (max-width: 375px) {
+  :root {
+    font-size: 10px;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  :root {
+    font-size: 16px;
+  }
+  .card-grid {
+    display: grid;
+    /* grid-template-columns: repeat(3, minmax(0,1fr)); */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /* grid-template-columns: repeat(4, 1fr => minmax(auto,1fr)); */
+  }
+}
+
+.card img {
+  display: inline-block;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow:
+    1rem 1rem 2rem inset #1b15155e,
+    -1.4rem -1.4rem 2rem inset #f3f3f35e;
+  border: 2px solid black;
+  margin: 5%;
+  object-fit: cover;
+}
+
+.dish1 {
+  object-position: right;
+  object-position: 80%;
+}
+
+/* CARD STYLING START HERE */
+.card h3,
+.card p {
+  flex: 1 1;
+}
+
+.card:hover {
+  box-shadow:
+    1rem 1rem 3rem,
+    1rem 1rem 2rem inset #f3f3f35e,
+    -1.4rem -1.4rem 2rem inset #f3f3f35e;
+  transform: translateY(0.8rem);
+}
+
+.card button {
+  width: 7em;
+  aspect-ratio: 4;
+  margin: 2em 0;
+  flex: 2 1;
+  border-radius: 0.3rem;
+}
+
+.card span {
+  font-weight: 100;
+}
+
+.card h3 {
+  margin: 1rem 0;
+}

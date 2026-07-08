@@ -1,0 +1,8 @@
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background:linear-gradient(
+    255deg,
+    rgb(209, 20, 20) 0%,
+    rgba(237, 221, 83, 1) 100%);
+}
